@@ -10,7 +10,7 @@
   }
 
   #parallax-image {
-    background-image: url("E:/Subhojit/HTML_CSS_Javascript/Business Website/static/images/parallax-image.jpg");
+    background-image: url("static/images/parallax-image.jpg");
     min-height: 100%;
   }
 
