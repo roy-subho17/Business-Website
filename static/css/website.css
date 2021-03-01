@@ -1,0 +1,95 @@
+@media (max-width: 2000px) {
+  body {
+    margin: 0;
+    font-family: "Lato", "sans-serif";
+    height: 100vh;
+    line-height: 1.8em;
+    font-weight: 400;
+    font-size: 16px;
+    overflow-x: hidden;
+  }
+
+  #parallax-image {
+    background-image: url("../images/parallax-image.jpg");
+    min-height: 100%;
+  }
+
+  #parallax-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+    position: relative;
+  }
+
+  #parallax-text {
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+  }
+
+  #border {
+    color: #fff;
+    padding: 20px;
+    background-color: #111;
+  }
+
+  #view-btn {
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 5px;
+    border: 1px solid black;
+    width: 20%;
+    margin: 2.5rem auto;
+    padding: 10px;
+    border-radius: 50px;
+    display: block;
+  }
+
+  #view-btn:hover {
+    background-color: gainsboro;
+    transition: background-color 0.5s;
+  }
+}
+
+:root {
+  --title-font-size: 16px;
+  --link-font-size: 10px;
+}
+
+@media (max-width: 1038px) {
+  #view-btn {
+    font-size: 14px;
+    letter-spacing: 4px;
+    width: 20%;
+  }
+}
+
+@media (max-width: 881px) {
+  #parallax-text {
+    font-size: 22px;
+  }
+
+  #view-btn {
+    font-size: 12px;
+    letter-spacing: 3px;
+    width: 25%;
+  }
+}
+
+@media (max-width: 580px) {
+  #parallax-text {
+    font-size: var(--title-font-size);
+  }
+
+  #view-btn {
+    font-size: var(--link-font-size);
+    letter-spacing: 3px;
+    width: 40%;
+  }
+}
