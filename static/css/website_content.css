@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: "Lato", "sans-serif";
+  line-height: 1.8em;
+  font-weight: 400;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+#images {
+  max-width: 900px;
+  margin: auto;
+  /*border: 1px solid red;*/
+}
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: linear-gradient(to right, orange, red);
+  color: #fff;
+}
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: #fff;
+}
+
+#content {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+}
+
+img {
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: crimson;
+}
+p {
+  font-size: 1.2rem;
+  color: darkgreen;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  margin: auto;
+  padding: 1rem 0.5rem;
+  background-color: #333;
+  letter-spacing: 2px;
+}
+
+footer h3 {
+  font-size: 2rem;
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+}
+
+#navbar {
+  background-color: #333;
+  padding: 10px;
+  width: 100%;
+  z-index: 1;
+}
+#navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  cursor: pointer;
+  border-right: 1px solid white;
+}
+
+#navbar a:hover {
+  background-color: darkgrey;
+}
+
+#search-form {
+  display: inline;
+  position: absolute;
+  right: 100px;
+}
+
+#search-btn {
+  display: inline;
+  position: absolute;
+  right: 30px;
+}
+#navbar #search {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  width: 100%;
+}
+#navbar #search:hover {
+  background-color: darkgreen;
+}
+
+.search-bar {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+#navbar #search a {
+  border: none;
+}
+
+#navbar #search a:hover {
+  background-color: darkgreen;
+}
+
+@media (max-width: 440px) {
+  #parallax-text,
+  h1,
+  h2,
+  h3 {
+    font-size: var(--title-font-size);
+  }
+
+  footer h3 {
+    font-size: var(--title-font-size);
+  }
+
+  p {
+    font-size: var(--para-font-size);
+    width: 100%;
+  }
+
+  #search-form {
+    width: 30%;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  #navbar {
+    font-size: var(--nav-font-size);
+  }
+}
